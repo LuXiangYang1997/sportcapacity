@@ -22,4 +22,10 @@ class MatchGradeFragment : BaseFragment<MatchGradeLayoutBinding, MatchGradeVm>()
 
         return matchGradeVm
     }
+
+    override fun initViewObservable() {
+        super.initViewObservable()
+
+    }
+
 }

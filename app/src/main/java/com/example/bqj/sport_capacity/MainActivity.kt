@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        binding = DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
 
         init()
 
@@ -28,8 +29,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
      * 初始化
      */
     private fun init() {
-
-        binding = DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
 
         val matchapplyFragment = MatchApplyFragment()
         val matchGradeFragment = MatchGradeFragment()
@@ -78,6 +77,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 tv_discover.setTextColor(resources.getColor (R.color.color_333333))
                 img_pcenter.setImageResource(R.mipmap.icon_pcenter_unselect)
                 tv_pcenter.setTextColor(resources.getColor (R.color.color_333333))
+                vp_home.currentItem=tabState
             }
 
             1 -> {
@@ -90,6 +90,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 tv_discover.setTextColor(resources.getColor (R.color.color_333333))
                 img_pcenter.setImageResource(R.mipmap.icon_pcenter_unselect)
                 tv_pcenter.setTextColor(resources.getColor (R.color.color_333333))
+                vp_home.currentItem=tabState
             }
 
             2 -> {
@@ -102,6 +103,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 tv_discover.setTextColor(resources.getColor (R.color.color_333333))
                 img_pcenter.setImageResource(R.mipmap.icon_pcenter_unselect)
                 tv_pcenter.setTextColor(resources.getColor (R.color.color_333333))
+                vp_home.currentItem=tabState
             }
 
             3 -> {
@@ -114,7 +116,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 tv_discover.setTextColor(resources.getColor (R.color.color_333333))
                 img_pcenter.setImageResource(R.mipmap.icon_pcenter_select)
                 tv_pcenter.setTextColor(resources.getColor (R.color.color_333333))
-
+                vp_home.currentItem=tabState
 
             }
 

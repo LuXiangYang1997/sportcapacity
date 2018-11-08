@@ -10,10 +10,7 @@ class ViewPagerAdapter(fm: FragmentManager,fragmentList: List<Fragment>) : Fragm
 
 
     override fun getItem(position: Int): Fragment {
-        return fragmentList.get(position)
-
-
-
+        return fragmentList[position]
     }
 
     override fun getCount(): Int {

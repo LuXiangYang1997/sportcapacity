@@ -25,5 +25,9 @@ class PCenterFragment : BaseFragment<PcenterLayoutBinding,PcenterVm>() {
         return pcenterVm
     }
 
+    override fun initViewObservable() {
+        super.initViewObservable()
+
+    }
 
 }

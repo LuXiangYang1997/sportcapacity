@@ -21,4 +21,10 @@ class DiscoverFragment :BaseFragment<DiscoverLayoutBinding,DiscoverVm>(){
         val discoverVm = DiscoverVm()
         return discoverVm
     }
+
+    override fun initViewObservable() {
+        super.initViewObservable()
+
+    }
+
 }
