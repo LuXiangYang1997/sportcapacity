@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">智体运动</string>
+
+    <string name="match_apply">大赛报名</string>
+    <string name="match_grade">比赛成绩</string>
+    <string name="discover">发现</string>
+    <string name="pcenter">个人中心</string>
+
+</resources>
